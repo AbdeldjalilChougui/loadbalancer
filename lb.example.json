@@ -1,0 +1,18 @@
+{
+  "listen": ":8080",
+  "admin": ":9090",
+  "strategy": "weighted",
+  "retries": 2,
+  "backends": [
+    {"url": "http://127.0.0.1:9001", "weight": 3},
+    {"url": "http://127.0.0.1:9002", "weight": 1}
+  ],
+  "health_check": {
+    "path": "/healthz",
+    "interval": "5s",
+    "timeout": "1s",
+    "healthy_threshold": 2,
+    "unhealthy_threshold": 2
+  },
+  "circuit_breaker": {"failure_threshold": 5, "cooldown": "10s"}
+}
