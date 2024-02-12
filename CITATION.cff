@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+type: software
+title: "loadbalancer"
+abstract: "An HTTP reverse-proxy load balancer in Go, using only the standard library and fsnotify. It has three balancing strategies, active health checks, a passive circuit breaker per backend, retries for idempotent requests, config hot reload, and Prometheus metrics."
+authors:
+  - family-names: "Chougui"
+    given-names: "Abdeldjalil"
+version: "0.1.0"
+date-released: "2026-10-18"
+license: MIT
+repository-code: "https://github.com/AbdeldjalilChougui/loadbalancer"
+url: "https://pkg.go.dev/github.com/AbdeldjalilChougui/loadbalancer"
